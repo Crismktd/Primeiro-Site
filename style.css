@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; padding: 2em;
+    
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    background-color: aqua;background-color: blueviolet;
+    margin-bottom: 2em;
+}
+
+img{
+    width: 100%;
+}
+
+.card div{
+    padding: 2em;
+}
+
+.card:nth-child(even) img{
+    order: 2;
+}
+
+.btn{
+    background-color: aqua;
+    color: darkorange;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 2em;
+    cursor: pointer;
+    transition: background-color 1s ease-in
+}
+
+a{
+    text-decoration: none;
+    }
+
+    .btn:hover{
+        background-color: blueviolet;
+        color: rgb(14, 2, 72);
+        box-shadow: 1px 1px 2px black;
+        }
+
+    .Galeria{
+        margin: 2em;
+        display: flex;
+        height: 20em;
+        gap: 0.5em;
+    }
+
+    .Galeria div{
+        flex: 1;
+        background-size: cover;
+        background-position: top center; /*top bottom center left right;*/
+        }
+
+    .Galeria div:hover{
+        flex: 3;
+        transition: all 1s cubic-bezier(1,.15,.47,.35);
+        box-shadow: 25px 25px 15px rgb(34, 28, 28);
+    }
+
+    .Galeria:hover div:not(:hover) {
+        filter:grayscale(90%) opacity(0.1);
+        filter: contrast(30%) blur(200px) 
+
+        
+
+    }
+        
+
